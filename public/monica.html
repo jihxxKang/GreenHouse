@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Browse | Monica's Plant</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendors/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Biryani&family=Quicksand"
+    />
+
+    <script src="/vendors/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/vendors/hammer/hammer.min.js"></script>
+    <script src="/vendors/hammer/jquery.hammer.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+
+    <style type="text/css">
+      .parallax {
+        /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax */
+        /* The image used */
+        background-image: url('/images/monica_plant_expanded.png');
+        background-size: contain;
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: 25% 20%;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: #fdf9ec">
+    <br />
+    <div class="parallax">
+      <div class="container" style="position: fixed">
+        <br />
+        <div class="row">
+          <div class="col">
+            <a
+              onclick="history.back()"
+              class="btn btn-light"
+              style="box-shadow: 5px 5px #ede9dd; font-family: Quicksand"
+              >back</a
+            >
+          </div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col">
+            <i class="fa fa-heart" id="heart"></i>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+    </div>
+    <div class="FixedHeightContainer" style="width: 100%;">
+      <br />
+      <h2 class="title" style="font-family: Biryani; font-size: 32px">
+        <b>MONICA'S PLANT</b>
+      </h2>
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <img
+              src="/iconfolder/watering-can-icon.png"
+              class="center"
+              height="45"
+            />
+          </div>
+          <div class="col">
+            <p>Watering</p>
+					<div class="btn-light" style="border-radius: 15%; width: 90px; text-align: center;">
+					  weekly
+					</div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-4">
+            <img src="/iconfolder/sun-icon.png" class="center" height="45" />
+          </div>
+          <div class="col">
+            <p>Sunlight</p>
+					<div class="btn-light" style="border-radius: 15%; width: 90px; text-align: center;">
+					  direct
+					</div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-4">
+            <img src="/iconfolder/health-icon.png" class="center" height="45" />
+          </div>
+          <div class="col">
+            <p>Health</p>
+					<div class="btn-light" style="border-radius: 15%; width: 90px; text-align: center;">
+					  healthy
+					</div>
+
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-4">
+            <img src="/iconfolder/ruler-icon.png" class="center" height="45" />
+          </div>
+          <div class="col">
+            <p>Size</p>
+					<div class="btn-light" style="border-radius: 15%; width: 90px; text-align: center;">
+					  medium
+					</div>
+
+          </div>
+        </div>
+        <br />
+      </div>
+      <div class="container text-center">
+        <a
+          href="/chat/monica"
+          class="btn btn-light"
+          style="box-shadow: 5px 5px #ede9dd"
+          >contact seller</a
+        >
+      </div>
+      <br />
+    </div>
+
+    <!-- heart turns red on click -->
+    <!-- source: https://www.w3resource.com/icon/font-awesome/web-application-/iconfolder/heart.php -->
+    <script>
+      (function () {
+        const heart = document.getElementById('heart');
+        heart.addEventListener('click', function () {
+          heart.classList.toggle('red');
+        });
+      })();
+    </script>
+  </body>
+</html>
