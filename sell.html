@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sell</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendors/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Biryani&family=Quicksand"
+    />
+
+    <script src="/vendors/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/vendors/hammer/hammer.min.js"></script>
+    <script src="/vendors/hammer/jquery.hammer.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <style type="text/css"></style>
+  </head>
+
+  <body style="background-color: #fdf9ec; font-family: Quicksand">
+    <!-- forms -->
+    <div>
+      <div class="container">
+        <br />
+
+        <!-- https://mdbootstrap.com/docs/standard/components/buttons/ -->
+        <a
+          onclick="history.back()"
+          class="btn btn-light"
+          style="box-shadow: 5px 5px #ede9dd; font-family: Quicksand"
+          >cancel</a
+        >
+        <br />
+
+        <div>
+          <!--<p class="font-italic text-white text-center">The image uploaded will be rendered inside the box below.</p>-->
+          <div class="image-area mt-4">
+            <img
+              id="imageResult"
+              src="iconfolder/photo-icon.png"
+              width="100"
+              height="100"
+              alt=""
+              class="img-fluid rounded shadow-sm mx-auto d-block"
+            />
+          </div>
+          <br />
+          <!-- https://bootstrapious.com/p/bootstrap-image-upload -->
+          <div
+            class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm"
+          >
+            <input
+              id="upload"
+              type="file"
+              onchange="readURL(this);"
+              class="form-control border-0"
+            />
+            <label
+              id="upload-label"
+              for="upload"
+              class="font-weight-light text-muted"
+              >upload image</label
+            >
+            <div class="input-group-append">
+              <label for="upload" class="btn btn-light m-0 rounded-pill px-4">
+                <i class="fa fa-cloud-upload mr-2 text-muted"></i
+                ><small class="text-uppercase font-weight-bold text-muted"
+                  >Choose file</small
+                ></label
+              >
+            </div>
+          </div>
+          <!-- https://getbootstrap.com/docs/4.0/components/forms/ -->
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="title"
+          />
+          <br />
+          <input class="form-control" type="text" placeholder="price" />
+          <br />
+				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="description"></textarea> <!-- NEW -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- drop downs -->
+    <!-- https://getbootstrap.com/docs/5.2/forms/select/ -->
+    <br /><br /><br />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img
+            src="iconfolder/watering-can-icon.png"
+            class="center"
+            height="90"
+          />
+        </div>
+        <div class="col">
+          <p><b>Watering</b></p>
+          <select
+            class="form-select btn-light"
+            style="border-radius: 15%; box-shadow: 5px 5px #ede9dd"
+          >
+            <option selected>select</option>
+            <option value="1">weekly</option>
+            <option value="2">bi-weekly</option>
+          </select>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row">
+        <div class="col">
+          <img src="iconfolder/sun-icon.png" class="center" height="90" />
+        </div>
+        <div class="col">
+          <p><b>Sunlight</b></p>
+          <select
+            class="form-select btn-light"
+            style="border-radius: 15%; box-shadow: 5px 5px #ede9dd"
+          >
+            <option selected>select</option>
+            <option value="1">indirect</option>
+            <option value="2">direct</option>
+          </select>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row">
+        <div class="col">
+          <img src="iconfolder/health-icon.png" class="center" height="90" />
+        </div>
+        <div class="col">
+          <p><b>Health</b></p>
+          <select
+            class="form-select btn-light"
+            style="border-radius: 15%; box-shadow: 5px 5px #ede9dd"
+          >
+            <option selected>select</option>
+            <option value="1">weak</option>
+            <option value="2">healthy</option>
+          </select>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row">
+        <div class="col">
+          <img src="iconfolder/ruler-icon.png" class="center" height="90" />
+        </div>
+        <div class="col">
+          <p><b>Size</b></p>
+          <select
+            class="form-select btn-light"
+            style="border-radius: 15%; box-shadow: 5px 5px #ede9dd"
+          >
+            <option selected>select</option>
+            <option value="1">small</option>
+            <option value="2">medium</option>
+            <option value="3">large</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- upload button -->
+      <br />
+      <div class="container text-center">
+        <a
+          href="/browse/monica"
+          class="btn btn-success"
+          style="box-shadow: 5px 5px #ede9dd"
+          >upload</a
+        >
+      </div>
+      <br />
+    </div>
+
+    <!-- shows image after uploading -->
+    <script>
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            $('#imageResult').attr('src', e.target.result);
+          };
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+      $(function () {
+        $('#upload').on('change', function () {
+          readURL(input);
+        });
+      });
+
+      /*  ==========================================
+        SHOW UPLOADED IMAGE NAME
+        * ========================================== */
+      var input = document.getElementById('upload');
+      var infoArea = document.getElementById('upload-label');
+
+      input.addEventListener('change', showFileName);
+
+      function showFileName(event) {
+        var input = event.srcElement;
+        var fileName = input.files[0].name;
+        infoArea.textContent = 'File name: ' + fileName;
+      }
+    </script>
+  </body>
+</html>

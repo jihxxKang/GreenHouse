@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendors/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Biryani&family=Quicksand"
+    />
+
+    <script src="/vendors/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/vendors/hammer/hammer.min.js"></script>
+    <script src="/vendors/hammer/jquery.hammer.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <style type="text/css">
+      h1 {
+        text-align: right;
+      }
+
+      body {
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 0 20px;
+        background-color: #fdf9ec;
+      }
+
+      .container {
+        background-color: #dde7c8;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .container::after {
+        content: '';
+        clear: both;
+        display: table;
+      }
+
+      .container img {
+        float: left;
+        max-width: 60px;
+        width: 100%;
+        margin-right: 20px;
+      }
+
+      .msg {
+        float: left;
+        color: #999;
+      }
+
+      .button {
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 2px 2px #888888;
+        border: none;
+        color: black;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 13px;
+      }
+
+      .bold {
+        font-size: 40px;
+        float: right;
+      }
+
+      .top {
+        margin: 10px;
+        padding: 10px;
+        color: #32291f;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="top">
+      <div style="font-family: Biryani">
+        <a
+          onclick="history.back()"
+          class="btn btn-light"
+          style="box-shadow: 5px 5px #ede9dd; font-family: Quicksand"
+          >back</a
+        >
+        <b class="bold">Messages</b>
+      </div>
+    </div>
+    <hr
+      style="
+        height: 5px;
+        border-width: 10;
+        color: #32291f;
+        background-color: #32291f;
+      "
+    />
+
+    <div class="container" style="font-family: Quicksand">
+      <img
+        src="/images/profile-icon-full.png"
+        alt="Avatar"
+        style="max-width: 65px"
+      />
+      <b><p>Monica</p></b>
+      <span class="msg">Hi, is the plant still available? </span>
+    </div>
+
+    <div class="container" style="font-family: Quicksand">
+      <img
+        src="/images/profile-icon-full.png"
+        alt="Avatar"
+        style="max-width: 65px"
+      />
+      <b><p>Rose</p></b>
+      <span class="msg">Hi! I'm interested in the post ...</span>
+    </div>
+
+    <div class="container" style="font-family: Quicksand">
+      <img
+        src="/images/profile-icon-full.png"
+        alt="Avatar"
+        style="max-width: 65px"
+      />
+      <b><p>Francis</p></b>
+      <span class="msg">Hi! Can you ship it to Texas?</span>
+    </div>
+
+    <div class="container" style="font-family: Quicksand">
+      <img
+        src="/images/profile-icon-full.png"
+        alt="Avatar"
+        style="max-width: 65px"
+      />
+      <b><p>Lucy</p></b>
+      <span class="msg">It looks like the page is broken</span>
+    </div>
+    <div class="container" style="font-family: Quicksand">
+      <img
+        src="/images/profile-icon-full.png"
+        alt="Avatar"
+        style="max-width: 65px"
+      />
+      <b><p>Nancy</p></b>
+      <span class="msg">It looks great!</span>
+    </div>
+
+    <div class="container" style="font-family: Quicksand">
+      <img
+        src="/images/profile-icon-full.png"
+        alt="Avatar"
+        style="max-width: 65px"
+      />
+      <b><p>Mike</p></b>
+      <span class="msg">Got it</span>
+    </div>
+    <div class="container" style="font-family: Quicksand">
+      <img
+        src="/images/profile-icon-full.png"
+        alt="Avatar"
+        style="max-width: 65px"
+      />
+      <b><p>Logan</p></b>
+      <span class="msg">Got it</span>
+    </div>
+    <div class="container" style="font-family: Quicksand">
+      <img
+        src="/images/profile-icon-full.png"
+        alt="Avatar"
+        style="max-width: 65px"
+      />
+      <b><p>Tammy</p></b>
+      <span class="msg">Got it</span>
+    </div>
+    <script></script>
+  </body>
+</html>
