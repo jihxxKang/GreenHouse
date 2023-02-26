@@ -10,19 +10,14 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="/vendors/bootstrap/css/bootstrap.css"
+      href="vendors/bootstrap/css/bootstrap.css"
     />
-    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Biryani&family=Quicksand"
     />
-
-    <script src="/vendors/jquery/jquery-3.3.1.min.js"></script>
-    <script src="/vendors/jquery-ui/jquery-ui.min.js"></script>
-    <script src="/vendors/hammer/hammer.min.js"></script>
-    <script src="/vendors/hammer/jquery.hammer.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
@@ -92,8 +87,13 @@
           <br />
           <input class="form-control" type="text" placeholder="price" />
           <br />
-				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="description"></textarea> <!-- NEW -->
-
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="description"
+          ></textarea>
+          <!-- NEW -->
         </div>
       </div>
     </div>
@@ -189,7 +189,7 @@
       <br />
       <div class="container text-center">
         <a
-          href="/browse/monica"
+          href="monica.html"
           class="btn btn-success"
           style="box-shadow: 5px 5px #ede9dd"
           >upload</a
@@ -205,30 +205,30 @@
           var reader = new FileReader();
 
           reader.onload = function (e) {
-            $('#imageResult').attr('src', e.target.result);
+            $("#imageResult").attr("src", e.target.result);
           };
           reader.readAsDataURL(input.files[0]);
         }
       }
 
       $(function () {
-        $('#upload').on('change', function () {
+        $("#upload").on("change", function () {
           readURL(input);
         });
       });
 
       /*  ==========================================
-        SHOW UPLOADED IMAGE NAME
+        SHOWS UPLOADED IMAGE NAME
         * ========================================== */
-      var input = document.getElementById('upload');
-      var infoArea = document.getElementById('upload-label');
+      var input = document.getElementById("upload");
+      var infoArea = document.getElementById("upload-label");
 
-      input.addEventListener('change', showFileName);
+      input.addEventListener("change", showFileName);
 
       function showFileName(event) {
         var input = event.srcElement;
         var fileName = input.files[0].name;
-        infoArea.textContent = 'File name: ' + fileName;
+        infoArea.textContent = "File name: " + fileName;
       }
     </script>
   </body>
